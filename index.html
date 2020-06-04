@@ -1,58 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>SUMMER CAMP TX</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="site.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="site.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light" style="color:#384d46">
+    <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light fixed-top">
       <a class="navbar-brand" href="#">Summer Camp</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownId">
-                      <a class="dropdown-item" href="#">Action 1</a>
-                      <a class="dropdown-item" href="#">Action 2</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/menu">Menu</a>
+          </li>
+        </ul>
+        <!-- <a href="/winter"><i class="fa fa-moon-o" aria-hidden="true" style="color: #384d46;"></i></a> -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col mx-auto pb-5 text-center">
+          <img src="assets/SC Tranparent.png" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row mx-auto justify-content-center">
+        <!-- Button trigger modal -->
+        <button
+          type="button-lg"
+          class="btn btn-outline-secondary btn-lg"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          Contact Us For Your Next Event        
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Name:</label>
+                    <input type="text" class="form-control" id="recipient-name">
                   </div>
-              </li>
-          </ul>
-        <a href="/winter"><i class="fa fa-moon-o" aria-hidden="true" style="color: #384d46;"></i></a>
-      </div>
-  </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm mx-auto p-5">
-          <img src="assets/SC Tranparent.png" class="img-fluid">
+                  <div class="form-group">
+                    <label for="recipient-email" class="col-form-label">Email:</label>
+                    <input type="text" class="form-control" id="recipient-email">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" rows="5" id="message-text"></textarea>
+                  </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-outline-secondary">Send message</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm mx-auto text-center">
-          <h3>Coming Soon to Richardson, TX</h3>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+         <div class="modal-content">
+         </div>
+         </div>
         </div>
-      </div>
+    </div>
+    <div class="container-fluid">
+      <section class="container-fluid mx-0 px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="assets/sc-cone-pic.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>NATURAL INGREDIENTS</h2>
+                        <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+                        <p class="lead">All of our syrups are made with real, natural, and local ingredients. 
+                          No artificial sweeteners or corn syrup. All handmade to perfection.
+                        </p>
+                        <a href="/menu" class="btn btn-outline-secondary">See Our Menu</a>
+                    </div>
+                </div>
+            </div>
+      </section>
+    <div class="container-fluid">
+      <section class="container-fluid mx-0 px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-2">
+                <img src="assets/sc-cone-pic.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-1">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>LOCATION AND EVENTS</h2>
+                        <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+                        <p class="lead">We will have a mobile location coming soon to Richardson, TX.
+                          In the meantime, we are ready to serve your event, party, wedding, and more!
+                          Fill our our contact form below to get in touch!
+                        </p>
+                        <button
+                        type="button-lg"
+                        class="btn btn-outline-secondary btn"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                      >
+                        Contact Us        
+                      </button>
+                    </div>
+                </div>
+            </div>
+      </section>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+          $(document).scroll(function () {
+              var $nav = $("#mainNavbar");
+              $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+          });
+      });
+  </script>
   </body>
 </html>

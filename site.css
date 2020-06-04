@@ -8,17 +8,21 @@ body {
   margin-bottom: 100px;
 }
 
-.navbar.scrolled {
+.navbar {
   background: #384d46;
   transition: background 500ms;
 }
 
-#mainNavbar.scrolled .navbar-brand{
+#mainNavbar .navbar-brand{
   color: #f3f0e3;
 }
 
-#mainNavbar.scrolled .nav-link{
+#mainNavbar .nav-link{
   color: #f3f0e3;
+}
+
+#header {
+  padding-top: 75px;
 }
 
 .blurb h2 {

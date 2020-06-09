@@ -1,7 +1,7 @@
 body {
-  background: #f3f0e3;
+  background: #f7f6e9;
   font-family: 'Shrikhand', cursive;
-  color: #384d46;
+  color: #99A89E;
 }
 
 p {
@@ -13,7 +13,7 @@ li {
 }
 
 a {
-  color: #f3f0e3;
+  color: #f7f6e9;
 }
 
 a:hover {
@@ -45,8 +45,8 @@ a:hover {
 }
 
 .footer {
-  background-color: #384d46;
-  color: #f3f0e3;
+  background-color: #99A89E;
+  color: #f7f6e9;
   height: 250px;
   max-width: 100%;
   margin: 0 auto;
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .modal-content {
-  background: #f3f0e3;
+  background: #f7f6e9;
 }
 
 .modal-content input {
@@ -86,15 +86,15 @@ a:hover {
 }
 
 .btn-green-outline {
-  background-color: #f3f0e3;
-  border: 2px solid #384d46;
-  color: #384d46;
+  background-color: #f7f6e9;
+  border: 2px solid #99A89E;
+  color: #99A89E;
 }
 
 .btn-green-outline:hover {
-  background-color: #384d46;
-  border: 2px solid #384d46;
-  color: #f3f0e3;
+  background-color: #99A89E;
+  border: 2px solid #99A89E;
+  color: #f7f6e9;
 }
 
 .email-form {
@@ -103,28 +103,27 @@ a:hover {
 
 .btn-email {
   background-color: #edd5a9;
-  color: #384d46;
+  color: #99A89E;
 }
 
 .btn-green {
-  background-color: #384d46;
+  background-color: #99A89E;
   font-size: 2rem;
   padding: 15px 40px;
   margin: 0;
-  color: #edd5a9;
-  box-shadow: #edd5a9 10px 10px 0 0 ;
+  color: #edb386;
+  box-shadow: #edb386 10px 10px 0 0 ;
   transition: .2s ease;
 }
 
 .btn-green:hover {
-  color: #edd5a9;
-  background: #384d46;
+  color: #edb386;
+  background: #99A89E;
   box-shadow: none;
   transition: .2s ease;
 }
 
 .navbar {
-  background: white;
   transition: background 500ms;
 }
 
@@ -154,7 +153,7 @@ section.main-info div {
 } */
 
 #mainNavbar .nav-link{
-  color: #384d46;
+  color: #edb386;
 }
 
 #mainNavbar .navbar-nav {

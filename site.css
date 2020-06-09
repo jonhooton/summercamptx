@@ -35,6 +35,11 @@ a:hover {
   background-size: auto;
 }
 
+.page-width {
+  width: 80%;
+  margin: auto;
+}
+
 .navbar-toggler {
   border-style: none;
 }
@@ -209,6 +214,11 @@ section.main-info div {
 
   .blurb p {
     font-size: 0.85rem;
+  }
+
+  .page-width {
+    width: 100%;
+    margin: auto;
   }
 
   .navbar-brand {

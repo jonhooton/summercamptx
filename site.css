@@ -31,15 +31,29 @@ a:hover {
 
 .parallax {
   /* The image used */
+  background-image: url(./assets/menu-jumbo-pic.JPG);
+  
+  /* Set a specific height */
+  height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+.menu-bg {
+  /* The image used */
   background-image: url(./assets/site-banner-img.JPG);
   
   /* Set a specific height */
   height: 600px;
 
   /* Create the parallax scrolling effect */
-  background-size: auto 1000px;
+  background-size: cover;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   /* background-size: cover; */
 }

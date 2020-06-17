@@ -126,15 +126,17 @@ a:hover {
 }
 
 .email-form {
-  max-width: 50%;
+  /* max-width: 50%; */
   font-weight: 600;
+  display: inline-flex;
 }
 
 .btn-email {
   background-color: #ba8778;
   color: #f7f6e9;
   font-weight: 800;
-  border-radius: 25px;
+  display: inline-flex;
+  /* border-radius: 25px; */
 }
 
 .btn-email:hover {
@@ -265,7 +267,7 @@ section.main-info-right div {
     background-position: bottom;
     background-repeat: no-repeat;
   }
-  
+
   .blurb h2 {
     font-size: 1.75rem;
   }

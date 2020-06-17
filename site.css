@@ -252,6 +252,20 @@ section.main-info-right div {
     margin-top: 550px;
   }
 
+  .parallax {
+    background-size: fill;
+    background-attachment: scroll;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .menu-bg {
+    background-size: fill;
+    background-attachment: scroll;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  
   .blurb h2 {
     font-size: 1.75rem;
   }

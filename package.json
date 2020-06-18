@@ -1,0 +1,22 @@
+{
+  "name": "summercamptx.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonhooton/summercamptx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonhooton/summercamptx/issues"
+  },
+  "homepage": "https://github.com/jonhooton/summercamptx#readme",
+  "dependencies": {
+    "form-serializer": "^2.5.0"
+  }
+}
